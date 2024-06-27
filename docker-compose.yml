@@ -1,0 +1,8 @@
+services:
+  server:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./.credentials:/credentials:ro
+    ports:
+      - "8080:8080"

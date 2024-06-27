@@ -1,0 +1,22 @@
+# Allowlisting gitignore template for GO projects from
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+
+# Ignore everything
+*
+
+# But not these files...
+!/.gitignore
+!/Dockerfile
+!docker-compose.yml
+
+!*.go
+!go.sum
+!go.mod
+
+!README.md
+!LICENSE
+
+# !Makefile
+
+# ...even if they are in subdirectories
+!*/
